@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\EmanueleQuattrocchi\OneDrive - ITS Incom\Erasmus\botasaurus\botasaurus\request_decorator.py", line 104, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\OneDrive - ITS Incom\Erasmus\botasaurus\main3.py", line 25, in scrapingPortatiles
+    portatiles_elements = WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".sc-evdWiO.dMAtyG.product-card")))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

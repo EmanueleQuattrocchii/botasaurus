@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "C:\Users\EmanueleQuattrocchi\OneDrive - ITS Incom\Erasmus\botasaurus\botasaurus\request_decorator.py", line 104, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\OneDrive - ITS Incom\Erasmus\botasaurus\main3.py", line 25, in scrapingPortatiles
+    portatiles_elements = WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".sc-evdWiO.dMAtyG.product-card")))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 191, in _predicate
+    return driver.find_elements(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 771, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.63)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61BEA3E42+31618]
+	(No symbol) [0x00007FF61BE1B0A9]
+	(No symbol) [0x00007FF61BCD888A]
+	(No symbol) [0x00007FF61BCADAE5]
+	(No symbol) [0x00007FF61BD545A7]
+	(No symbol) [0x00007FF61BD6C131]
+	(No symbol) [0x00007FF61BD4CEB3]
+	(No symbol) [0x00007FF61BD1A46B]
+	(No symbol) [0x00007FF61BD1B001]
+	GetHandleVerifier [0x00007FF61C1AA01D+3202397]
+	GetHandleVerifier [0x00007FF61C1F6A3D+3516285]
+	GetHandleVerifier [0x00007FF61C1EC4B0+3473904]
+	GetHandleVerifier [0x00007FF61BF55D46+760454]
+	(No symbol) [0x00007FF61BE26B4F]
+	(No symbol) [0x00007FF61BE21CE4]
+	(No symbol) [0x00007FF61BE21E72]
+	(No symbol) [0x00007FF61BE1121F]
+	BaseThreadInitThunk [0x00007FFC0D9C257D+29]
+	RtlUserThreadStart [0x00007FFC0E72AF28+40]
+

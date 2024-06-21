@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "C:\Users\EmanueleQuattrocchi\OneDrive - ITS Incom\Erasmus\botasaurus\botasaurus\request_decorator.py", line 104, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\OneDrive - ITS Incom\Erasmus\botasaurus\main3.py", line 25, in scrapingPortatiles
+    portatiles_elements = WebDriverWait(driver, 1000).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".sc-evdWiO.dMAtyG.product-card")))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 191, in _predicate
+    return driver.find_elements(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 771, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {"using": by, "value": value})["value"] or []
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\EmanueleQuattrocchi\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=126.0.2592.56)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FE1981C2+13538]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7FE121E79+595609]
+	(No symbol) [0x00007FF7FDF3E6CF]
+	(No symbol) [0x00007FF7FDF1B33A]
+	(No symbol) [0x00007FF7FDFA82AD]
+	(No symbol) [0x00007FF7FDFBAAFF]
+	(No symbol) [0x00007FF7FDFA1C63]
+	(No symbol) [0x00007FF7FDF7766E]
+	(No symbol) [0x00007FF7FDF7683C]
+	(No symbol) [0x00007FF7FDF77221]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7FE359764+1099860]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7FE09D8FC+53532]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7FE090E25+1605]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7FE3586F5+1095653]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7FE12C9F1+27777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7FE126D74+4100]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7FE126EAB+4411]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7FE11D030+575568]
+	BaseThreadInitThunk [0x00007FFC0D9C257D+29]
+	RtlUserThreadStart [0x00007FFC0E72AF28+40]
+
